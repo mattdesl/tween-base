@@ -10,7 +10,9 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "eases": "^1.0.6"
+    "eases": "^1.0.6",
+    "events": "^1.0.2",
+    "inherits": "^2.0.1"
   },
   "devDependencies": {
     "inherits": "^2.0.1",
