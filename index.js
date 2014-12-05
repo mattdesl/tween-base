@@ -15,13 +15,6 @@ function BaseTween(opt) {
     this.active = true
     this.cancelling = false
     this._started = false
-    
-    if (opt && opt.onStart)
-        this.on('start', opt.onStart)
-    if (opt && opt.onComplete)
-        this.on('complete', opt.onComplete)
-    if (opt && opt.onUpdate)
-        this.on('update', opt.onUpdate)
 }
 
 inherits(BaseTween, EventEmitter)
