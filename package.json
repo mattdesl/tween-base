@@ -1,0 +1,41 @@
+{
+  "name": "tween-base",
+  "version": "1.0.0",
+  "description": "a basic tween object for others to build on",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "eases": "^1.0.6"
+  },
+  "devDependencies": {
+    "inherits": "^2.0.1",
+    "lerp-array": "^1.1.1",
+    "tape": "^3.0.3"
+  },
+  "scripts": {
+    "test": "tape test/*"
+  },
+  "keywords": [
+    "tween",
+    "basic",
+    "abstract",
+    "class",
+    "tweening",
+    "animate",
+    "anim",
+    "animations"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/tween-base.git"
+  },
+  "homepage": "https://github.com/mattdesl/tween-base",
+  "bugs": {
+    "url": "https://github.com/mattdesl/tween-base/issues"
+  }
+}
