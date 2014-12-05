@@ -25,6 +25,14 @@ ticker.push(array(start, end, { duration: 2 }))
 
 This describes the public (user-facing) API for tweens.
 
+#### `tween = BaseTween(opt)`
+
+Where options usually describes the following:
+
+- `delay` in time units, default 0
+- `duration` in time units, default 0
+- `ease` is an [easing function](https://www.npmjs.org/package/eases) -- tween engines may want to allow strings for user friendliness
+
 ## methods
 
 #### `cancel()`
@@ -42,6 +50,15 @@ A ticker engine might then choose to remove the tween from the queue.
 #### `target`
 
 The target of this tween, i.e. object or array being animated.
+
+#### `tween.on(event, func)`
+
+A tween is an event emitter with the following events:
+
+- `start` triggered when the tween is first started
+- `cancelling` triggered before the tween completes, initiating from a call to `cancel()`
+- `complete` triggered when the tween is completed
+- `update` triggered after the tween updates its values
 
 --
 
