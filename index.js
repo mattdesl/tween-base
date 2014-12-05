@@ -27,7 +27,7 @@ function BaseTween(opt) {
 inherits(BaseTween, EventEmitter)
 
 BaseTween.prototype.lerp = noop
-BaseTween.prototype.prepare = noop
+BaseTween.prototype.ready = noop
 
 BaseTween.prototype.cancel = function() {
     this.cancelling = true
