@@ -24,6 +24,7 @@ BaseTween.prototype.ready = noop
 
 BaseTween.prototype.cancel = function() {
     this.cancelling = true
+    return this
 }
 
 BaseTween.prototype.tick = function(dt, ease) {

@@ -37,7 +37,7 @@ Where options usually describes the following:
 
 #### `cancel()`
 
-Cancels a tween. Next time this tween is ticked, it will:
+Cancels a tween. Returns this for chaining. Next time this tween is ticked, it will:
 
 - emit a `"cancelling"` event
 - become inactive and stop updating the target
