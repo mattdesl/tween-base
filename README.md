@@ -47,10 +47,6 @@ A ticker engine might then choose to remove the tween from the queue.
 
 ## members
 
-#### `target`
-
-The target of this tween, i.e. object or array being animated.
-
 #### `tween.on(event, func)`
 
 A tween is an event emitter with the following events:

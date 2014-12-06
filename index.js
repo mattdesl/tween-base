@@ -5,7 +5,6 @@ var inherits = require('inherits')
 
 function BaseTween(opt) {
     EventEmitter.call(this)
-    this.target = null
 
     //users generally don't need to change these
     this.duration = (opt && opt.duration)||0
@@ -13,6 +12,7 @@ function BaseTween(opt) {
     this.time = 0
     this.ease = opt && opt.ease
     this.active = true
+    this.enabled = true
     this.cancelling = false
     this._started = false
 }
@@ -35,7 +35,7 @@ BaseTween.prototype.tick = function(dt, ease) {
         this.emit('complete', this)
     }
 
-    if (!this.active)
+    if (!this.active || !this.enabled)
         return
 
     var last = this.time
