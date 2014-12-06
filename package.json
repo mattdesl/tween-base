@@ -1,6 +1,6 @@
 {
   "name": "tween-base",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "a basic tween object for others to build on",
   "main": "index.js",
   "license": "MIT",
